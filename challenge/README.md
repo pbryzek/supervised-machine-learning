@@ -49,11 +49,12 @@ Finally I used the EasyEnsembleClassifier(n_estimators=100, random_state=1) algo
 - EasyEnsembleClassifier: .9316
 
 ### Precision & Recall Scores
-RandomOverSampler
-  pre   rec   f1
-0 0.02  0.72  .03
-1 1.00  0.72  .84
-  0.99  0.72  .83
+RandomOverSampler </br>
+  pre   rec   f1 </br>
+0 0.02  0.72  .03 </br>
+1 1.00  0.72  .84 </br>
+  0.99  0.72  .83 </br>
+</br>
   
 SMOTE
   pre   rec   f1
