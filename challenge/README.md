@@ -56,35 +56,35 @@ RandomOverSampler </br>
   0.99  0.72  .83 </br>
 </br>
   
-SMOTE
-  pre   rec   f1
-0 0.02  0.72  .03
-1 1.00  0.73  .84
-  0.99  0.73  .84
+SMOTE </br>
+  pre   rec   f1 </br>
+0 0.02  0.72  .03 </br>
+1 1.00  0.73  .84 </br>
+  0.99  0.73  .84 </br>
   
-ClusterCentroids
-  pre   rec   f1
-0 0.01  0.75  .03
-1 1.00  0.66  .80
-  0.99  0.66  .79
+ClusterCentroids </br>
+  pre   rec   f1 </br>
+0 0.01  0.75  .03 </br>
+1 1.00  0.66  .80 </br>
+  0.99  0.66  .79 </br>
 
-SMOTEENN
-  pre   rec   f1
-0 0.02  0.72  .03
-1 1.00  0.72  .84
-  0.99  0.72  .83
+SMOTEENN </br>
+  pre   rec   f1 </br>
+0 0.02  0.72  .03 </br>
+1 1.00  0.72  .84 </br>
+  0.99  0.72  .83 </br>
   
 **Extension: Credit Risk Ensemble**
-BalancedRandomForestClassifier
-  pre   rec   f1
-0 0.40  0.47  .43
-1 1.00  1.00  1.00
-  0.99  0.99  .99
+BalancedRandomForestClassifier </br>
+  pre   rec   f1 </br>
+0 0.40  0.47  .43 </br>
+1 1.00  1.00  1.00 </br>
+  0.99  0.99  .99 </br>
 
-RandomOverSampler
-  pre   rec   f1
-0 0.09  0.92  .16
-1 1.00  0.94  .97
-  0.99  0.94  .97
+RandomOverSampler </br>
+  pre   rec   f1 </br>
+0 0.09  0.92  .16 </br>
+1 1.00  0.94  .97 </br>
+  0.99  0.94  .97 </br>
 
 ## Final Reccommendation
