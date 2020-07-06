@@ -47,7 +47,6 @@ Recall or sensitivity is defined as TP/(TP+FN). For the high risk loans (represe
 - SMOTE: .7264
 - ClusterCentroids: .7067
 - SMOTEENN: .7067
-
 **Extension: Credit Risk Ensemble**
 - BalancedRandomForestClassifier: 0.7306
 - EasyEnsembleClassifier: .9316
@@ -78,7 +77,7 @@ SMOTEENN </br>
 1 1.00  0.72  .84 </br>
   0.99  0.72  .83 </br>
   
-**Extension: Credit Risk Ensemble**
+**Extension: Credit Risk Ensemble** </br>
 BalancedRandomForestClassifier </br>
   pre   rec   f1 </br>
 0 0.40  0.47  .43 </br>
