@@ -38,6 +38,10 @@ Then using the same datset, I first over sampled the dataset until the high_risk
 
 Finally I used the EasyEnsembleClassifier(n_estimators=100, random_state=1) algorithm. Based off the X_train and y_train data that was entered into it, it yieled by far the best accuracy score of 93.16%.
 
+The precision is defined as TP / TP+FP. was very consistent for the low risk loans represented by the 1 row, all siz algorithms had a value of 1.0. For the precision of the high_risk loans, the BalancedRandomForestClassifier algorithm performed best at .40 with all other algorithms posting values below .1. 
+
+Recall or sensitivity is defined as TP/(TP+FN). For the high risk loans (represented with a 0), BalancedRandomForestClassifier had a low of 0.47 and EasyEnsembleClassifier had the best score at 0.92. For the low risk loans (represented with a 1), ClusterCentroids had the low of .66 and BalancedRandomForestClassifier had the greatest value at 1.0. The algorithm with the overall best Recall was BalancedRandomForestClassifier at .99 and ClusterCentroids was lowest at 0.66.
+
 ### Balanced Accuracy Scores
 - RandomOverSampler: .7231
 - SMOTE: .7264
@@ -81,10 +85,19 @@ BalancedRandomForestClassifier </br>
 1 1.00  1.00  1.00 </br>
   0.99  0.99  .99 </br>
 
-RandomOverSampler </br>
+EasyEnsembleClassifier </br>
   pre   rec   f1 </br>
 0 0.09  0.92  .16 </br>
 1 1.00  0.94  .97 </br>
   0.99  0.94  .97 </br>
 
+### F1 Score
+This is defined as the harmonic mean between the Precision and Recall to give me a sense of the overall stability of the algorithm. ClusterCentroids yielded the lowest value of .79 with EasyEnsembleClassifier at .97 and BalancedRandomForestClassifier at .99. 
+
 ## Final Reccommendation
+
+From the results provided, it can be seen that if you are going to choose between random sampling or SMOTE to do the oversampling, SMOTE will result in slightly better results and accuracy with respect to this dataset. ClusterCentroids algorithm showed the lowest overvall Precision at 66%, so if high precision is required this one should be avoided. SMOTEENN showed results very comparable to SMOTE and random sampler.
+
+The two algorithms that stood out were BalancedRandomForestClassifier and EasyEnsembleClassifier. Using the F1 score, we can see that the highest F1 from the other four algorithm was only .84, both of these have values at or above .97. Looking a bit closer we can see that BalancedRandomForestClassifier provides an overall more balanced f1 score with values of .43 and 1.0 compared with .16 and .97 for EasyEnsembleClassifier. 
+
+Based off of these results, it appears clear to me that BalancedRandomForestClassifier yielded the best overall results as indicated with its .99 F1 score. To get best prediction results with respect to each combintaion of precision, recall and high_risk and low_risk loans, this is the algorithm that showed overall best stability. Additional reccommendation would be to get a larger dataset and verify these prediction results to ensure the algorithm produced is not suffering from overfitting.
