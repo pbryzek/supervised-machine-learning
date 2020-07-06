@@ -49,38 +49,38 @@ Finally I used the EasyEnsembleClassifier(n_estimators=100, random_state=1) algo
 - EasyEnsembleClassifier: .9316
 
 ### Precision & Recall Scores
-- RandomOverSampler
+RandomOverSampler
   pre   rec   f1
 0 0.02  0.72  .03
 1 1.00  0.72  .84
   0.99  0.72  .83
   
-- SMOTE
+SMOTE
   pre   rec   f1
 0 0.02  0.72  .03
 1 1.00  0.73  .84
   0.99  0.73  .84
   
-- ClusterCentroids
+ClusterCentroids
   pre   rec   f1
 0 0.01  0.75  .03
 1 1.00  0.66  .80
   0.99  0.66  .79
 
-- SMOTEENN
+SMOTEENN
   pre   rec   f1
 0 0.02  0.72  .03
 1 1.00  0.72  .84
   0.99  0.72  .83
   
 **Extension: Credit Risk Ensemble**
-- BalancedRandomForestClassifier
+BalancedRandomForestClassifier
   pre   rec   f1
 0 0.40  0.47  .43
 1 1.00  1.00  1.00
   0.99  0.99  .99
 
-- RandomOverSampler
+RandomOverSampler
   pre   rec   f1
 0 0.09  0.92  .16
 1 1.00  0.94  .97
